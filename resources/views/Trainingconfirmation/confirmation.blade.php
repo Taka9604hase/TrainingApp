@@ -2,7 +2,8 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        トレーニング内容確認画面
+    
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -15,5 +16,6 @@
         </div>
     @endif
     
+    <a class="btn btn-block btn-dark" href="/">Toppage</a>
     
 @endsection

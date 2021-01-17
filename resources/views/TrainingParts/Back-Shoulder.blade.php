@@ -2,7 +2,8 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        Back, Shoulder選択画面
+  
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -14,6 +15,7 @@
             </div>
         </div>
     @endif
-    
+    <div class="btn btn-block btn-dark">Back, Shoulder</div>
+     {!! link_to_route('confirmation.get', 'トレーニング内容確認', [], ['class' => 'btn btn-block btn-secondary']) !!}
     
 @endsection

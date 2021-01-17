@@ -2,7 +2,12 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        Menu1
+        Menu2
+        Menu3
+        Menu4
+        Menu5
+    
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -15,5 +20,6 @@
         </div>
     @endif
     
+    {!! link_to_route('condition.get', 'Condition入力画面へ', [], ['class' => 'btn btn-dark btn-block']) !!}
     
 @endsection

@@ -2,7 +2,10 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        AerobicTraining選択画面
+        
+    @include('commons.footer')
+    
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -14,6 +17,5 @@
             </div>
         </div>
     @endif
-    
     
 @endsection

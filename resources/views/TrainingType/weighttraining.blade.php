@@ -2,7 +2,10 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        WeightTraining選択画面
+        
+    @include('commons.footer')
+    
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -14,6 +17,9 @@
             </div>
         </div>
     @endif
-    
+    <div class="btn btn-block btn-dark">Weight Training</div>
+    {!! link_to_route('arm_chest.get', 'Chest, Arm', [], ['class' => 'btn btn-block btn-secondary']) !!}
+    {!! link_to_route('back_shoulder.get', 'Back, Shoulder', [], ['class' => 'btn btn-block btn-secondary']) !!}
+    {!! link_to_route('foot.get', 'Foot', [], ['class' => 'btn btn-block btn-secondary']) !!}
     
 @endsection

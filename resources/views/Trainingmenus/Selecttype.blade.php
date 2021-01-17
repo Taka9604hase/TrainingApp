@@ -2,7 +2,8 @@
 
 @section('content')
     @if (Auth::check())
-        TopPage
+        Training Selecttype画面
+    
     @else
         <div class="center jumbotron">
             <div class="text-center">
@@ -15,5 +16,6 @@
         </div>
     @endif
     
-    
-@endsection
+    {{$item}}
+   
+@endsection 
